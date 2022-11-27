@@ -1,1 +1,4 @@
-# GoF-DesignPattern-By-Swfit
+# GoF-DesignPattern-By-Swift
+
+## What is this repository?
+I practice GoF-DesinPattern by Swift.
