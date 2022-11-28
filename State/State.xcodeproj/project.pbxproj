@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F348A1229342E9B00CDF641 /* RealWorldStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F348A1129342E9B00CDF641 /* RealWorldStateTests.swift */; };
 		A830D9862932EE6C005EAD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830D9852932EE6C005EAD18 /* AppDelegate.swift */; };
 		A830D9882932EE6C005EAD18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830D9872932EE6C005EAD18 /* SceneDelegate.swift */; };
 		A830D98A2932EE6C005EAD18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830D9892932EE6C005EAD18 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F348A1129342E9B00CDF641 /* RealWorldStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealWorldStateTests.swift; sourceTree = "<group>"; };
 		A830D9822932EE6C005EAD18 /* State.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = State.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A830D9852932EE6C005EAD18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A830D9872932EE6C005EAD18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A830D99C2932EE6E005EAD18 /* StateTests.swift */,
+				9F348A1129342E9B00CDF641 /* RealWorldStateTests.swift */,
 			);
 			path = StateTests;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F348A1229342E9B00CDF641 /* RealWorldStateTests.swift in Sources */,
 				A830D99D2932EE6E005EAD18 /* StateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44SQBVTPVY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = State/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -390,6 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44SQBVTPVY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = State/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -417,6 +423,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44SQBVTPVY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -436,6 +443,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44SQBVTPVY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;

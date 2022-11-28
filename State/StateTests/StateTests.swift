@@ -13,7 +13,6 @@ class Context {
     
     init(_ state: State){
         self.state = state
-        
     }
     
     func transitionTo(state: State) {

@@ -26,11 +26,11 @@ class WelcomeViewController: UIViewController {
             titleLabel.text = "タイトル"
             actionButton.setTitle("ボタン", for: .normal)
 
-//            apply(theme: DefaultButtonTheme(), for: actionButton)
-//            apply(theme: DefaultLabelTheme(), for: titleLabel)
+            apply(theme: DefaultButtonTheme(), for: actionButton)
+            apply(theme: DefaultButtonTheme(), for: titleLabel)
 
-            apply(theme: NightLabelTheme(), for: actionButton)
-            apply(theme: DefaultLabelTheme(), for: titleLabel)
+//            apply(theme: NightButtonTheme(), for: actionButton)
+//            apply(theme: NightLabelTheme(), for: titleLabel)
 
             titleLabel.translatesAutoresizingMaskIntoConstraints = false
             titleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
@@ -70,7 +70,6 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
 //        view.backgroundColor = .white
     }
 
