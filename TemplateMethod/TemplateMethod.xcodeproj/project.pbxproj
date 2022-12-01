@@ -14,6 +14,7 @@
 		9F348A29293576B000CDF641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F348A28293576B000CDF641 /* Assets.xcassets */; };
 		9F348A2C293576B000CDF641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F348A2A293576B000CDF641 /* LaunchScreen.storyboard */; };
 		9F348A37293576B000CDF641 /* TemplateMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F348A36293576B000CDF641 /* TemplateMethodTests.swift */; };
+		9F348A502936C97F00CDF641 /* TemplateMethodRealWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F348A4F2936C97F00CDF641 /* TemplateMethodRealWorldTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		9F348A2D293576B000CDF641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F348A32293576B000CDF641 /* TemplateMethodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateMethodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F348A36293576B000CDF641 /* TemplateMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodTests.swift; sourceTree = "<group>"; };
+		9F348A4F2936C97F00CDF641 /* TemplateMethodRealWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodRealWorldTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				9F348A36293576B000CDF641 /* TemplateMethodTests.swift */,
+				9F348A4F2936C97F00CDF641 /* TemplateMethodRealWorldTests.swift */,
 			);
 			path = TemplateMethodTests;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F348A37293576B000CDF641 /* TemplateMethodTests.swift in Sources */,
+				9F348A502936C97F00CDF641 /* TemplateMethodRealWorldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
