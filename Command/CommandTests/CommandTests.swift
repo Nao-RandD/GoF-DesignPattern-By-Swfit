@@ -8,29 +8,82 @@
 import XCTest
 @testable import Command
 
-final class CommandTests: XCTestCase {
+protocol Command {
+    func execute()
+}
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class SimpleCommand: Command {
+    private var payload: String
+
+    init(_ payload: String) {
+        self.payload = payload
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func execute() {
+        print("SimpleCommand: 私は\(payload)のようなシンプルな表示メソッドを処理できます")
+    }
+}
+
+class ComplexCommand: Command {
+    private var receiver: Receiver
+
+    private var a: String
+    private var b: String
+
+    init(_ receiver: Receiver, _ a: String, _ b: String) {
+        self.receiver = receiver
+        self.a = a
+        self.b = b
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func execute() {
+        print("ComplexCommand: 複雑な処理はReceiverによって行われる")
+        receiver.doSomething(a)
+        receiver.doSomethingElse(b)
+    }
+}
+
+class Receiver {
+    func doSomething(_ a: String) {
+        print("Receiver: \(a)をする")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func doSomethingElse(_ b: String) {
+        print("Receiver: \(b)もする")
+    }
+}
+
+class Invoker {
+    private var onStart: Command?
+    private var onFinish: Command?
+
+    func setOnStart(_ command: Command) {
+        onStart = command
     }
 
+    func setOnFinish(_ command: Command) {
+        onFinish = command
+    }
+
+    func doSomethingImportant() {
+        print("Invoker: どなたか私が始めるより前に何かしたいですか？")
+
+        onStart?.execute()
+
+        print("Invoker: ... とても大切な作業を進めます")
+        print("Invoker: どなたか私が終える前に何かしたいですか？")
+
+        onFinish?.execute()
+    }
+}
+
+class CommandConceptural: XCTestCase {
+    func test() {
+        let invoker = Invoker()
+        invoker.setOnStart(SimpleCommand("Say Hi!"))
+
+        let receiver = Receiver()
+        invoker.setOnFinish(ComplexCommand(receiver, "Send email", "Save report"))
+        invoker.doSomethingImportant()
+    }
 }
