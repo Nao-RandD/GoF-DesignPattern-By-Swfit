@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F7D5C3E29677F4000127098 /* SiriShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D5C3D29677F3F00127098 /* SiriShortcut.swift */; };
+		7F7D5C4129677F7100127098 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D5C4029677F7100127098 /* Operations.swift */; };
+		7F7D5C4329677FB100127098 /* DelayedOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D5C4229677FB100127098 /* DelayedOperation.swift */; };
 		9FBA6F39293EB9B10080D5A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA6F38293EB9B10080D5A9 /* AppDelegate.swift */; };
 		9FBA6F3B293EB9B10080D5A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA6F3A293EB9B10080D5A9 /* SceneDelegate.swift */; };
 		9FBA6F3D293EB9B10080D5A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA6F3C293EB9B10080D5A9 /* ViewController.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F7D5C3D29677F3F00127098 /* SiriShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriShortcut.swift; sourceTree = "<group>"; };
+		7F7D5C4029677F7100127098 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		7F7D5C4229677FB100127098 /* DelayedOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedOperation.swift; sourceTree = "<group>"; };
 		9FBA6F35293EB9B10080D5A9 /* Command.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Command.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBA6F38293EB9B10080D5A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FBA6F3A293EB9B10080D5A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F7D5C3C29677F2600127098 /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				7F7D5C3D29677F3F00127098 /* SiriShortcut.swift */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
+		7F7D5C3F29677F6000127098 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				7F7D5C4029677F7100127098 /* Operations.swift */,
+				7F7D5C4229677FB100127098 /* DelayedOperation.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
 		9FBA6F2C293EB9B10080D5A9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 		9FBA6F37293EB9B10080D5A9 /* Command */ = {
 			isa = PBXGroup;
 			children = (
+				7F7D5C3F29677F6000127098 /* Operation */,
+				7F7D5C3C29677F2600127098 /* Siri */,
 				9FBA6F38293EB9B10080D5A9 /* AppDelegate.swift */,
 				9FBA6F3A293EB9B10080D5A9 /* SceneDelegate.swift */,
 				9FBA6F3C293EB9B10080D5A9 /* ViewController.swift */,
@@ -213,8 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7D5C4329677FB100127098 /* DelayedOperation.swift in Sources */,
+				7F7D5C3E29677F4000127098 /* SiriShortcut.swift in Sources */,
 				9FBA6F3D293EB9B10080D5A9 /* ViewController.swift in Sources */,
 				9FBA6F39293EB9B10080D5A9 /* AppDelegate.swift in Sources */,
+				7F7D5C4129677F7100127098 /* Operations.swift in Sources */,
 				9FBA6F3B293EB9B10080D5A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
