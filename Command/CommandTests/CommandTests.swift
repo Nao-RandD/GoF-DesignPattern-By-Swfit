@@ -54,6 +54,8 @@ class Receiver {
 }
 
 class Invoker {
+    /// InvokerにとってCommandがどのように初期化されるかは意識しなくてよい
+    /// なぜなら、呼び出し側にインスタンス生成を任せているから
     private var onStart: Command?
     private var onFinish: Command?
 

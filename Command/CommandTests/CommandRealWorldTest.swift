@@ -123,6 +123,8 @@ extension CommandRealWorldTest {
 
 class SiriShortcuts {
     static let shared = SiriShortcuts()
+    /// Operationを順次実行するQueue
+    /// maxConcurrentOperationCountプロパティを設定することで同時に実行できるOperationを調整できる
     private lazy var queue = OperationQueue()
 
     private init() {}
